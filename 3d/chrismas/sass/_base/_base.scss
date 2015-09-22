@@ -1,0 +1,41 @@
+$imgFolder: "../img/";
+
+
+$light_color: #ffffff;
+$font_family: "AvantGardeGothicITCW01B_731069", "ITC Avant Garde Gothic", sans-serif;
+
+
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+
+body{
+	background-color: #000;
+	font-family: $font_family;
+	overflow:hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a{
+	color: $light_color;
+	border-bottom: 1px #999 solid;
+	text-decoration: none;
+	padding-bottom:2px;
+
+	&:hover{
+		border-bottom: 1px #fff solid;
+		@include transition(border-bottom, 0.2s, ease-in-out);
+
+	}
+}
+
+
+
+
