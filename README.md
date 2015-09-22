@@ -1,8 +1,8 @@
-## hello !
+## Experiments
 
-I'll save here some js.. soon
+on creative coding
+
 
 
 --
-visit my website : artsime.com
 @artsime
